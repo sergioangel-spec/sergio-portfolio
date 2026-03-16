@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sergio — Editor de Video</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="nav">
+      <span class="nav-logo">S.</span>
+      <ul class="nav-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#pokemon">Pokédex</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <span class="hero-badge">✦ Disponible para proyectos</span>
+        <h1 class="hero-title">Hola, soy <span class="accent">Sergio</span></h1>
+        <h2 class="hero-subtitle">Editor de Video</h2>
+        <p class="hero-desc">
+          Cuento historias a través del montaje. Especializado en contenido
+          para redes sociales, videoclips y proyectos audiovisuales que
+          conectan con la audiencia.
+        </p>
+        <div class="hero-tags">
+          <span class="tag">Premiere Pro</span>
+          <span class="tag">After Effects</span>
+          <span class="tag">DaVinci Resolve</span>
+          <span class="tag">Motion Graphics</span>
+          <span class="tag">Color Grading</span>
+        </div>
+        <div class="hero-cta">
+          <a href="mailto:sergio@email.com" class="btn btn-primary">Contáctame</a>
+          <a href="#pokemon" class="btn btn-ghost">Ver Pokédex ↓</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-ring">
+          <div class="avatar">S</div>
+        </div>
+        <div class="floating-chip chip-1">🎬 50+ proyectos</div>
+        <div class="floating-chip chip-2">⚡ Entrega rápida</div>
+      </div>
+    </section>
+
+    <!-- POKEMON SECTION -->
+    <section id="pokemon" class="pokemon-section">
+      <div class="section-header">
+        <span class="section-label">Mini feature</span>
+        <h2 class="section-title">Pokédex Aleatorio</h2>
+        <p class="section-desc">
+          Porque todo buen portfolio necesita un easter egg. Pulsa el botón y descubre un Pokémon.
+        </p>
+      </div>
+
+      <div class="pokemon-card" id="pokemon-card">
+        <div class="pokemon-placeholder" id="pokemon-placeholder">
+          <span class="placeholder-icon">?</span>
+          <p>Todavía no has descubierto ningún Pokémon</p>
+        </div>
+        <div class="pokemon-display" id="pokemon-display" style="display:none">
+          <div class="pokemon-id" id="pokemon-id">#000</div>
+          <img class="pokemon-img" id="pokemon-img" src="" alt="" />
+          <h3 class="pokemon-name" id="pokemon-name">—</h3>
+          <div class="pokemon-types" id="pokemon-types"></div>
+          <div class="pokemon-stats" id="pokemon-stats"></div>
+        </div>
+      </div>
+
+      <button class="btn btn-surprise" id="btn-surprise">
+        <span id="btn-text">✦ Sorpréndeme</span>
+      </button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>Hecho con ♥ por Sergio · <span id="year"></span></p>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
